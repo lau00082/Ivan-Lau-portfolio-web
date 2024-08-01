@@ -1,0 +1,175 @@
+/* color pattern */
+:root {
+  /* Background Colors */
+  --bs-body-bg: #0f1312 !important;
+  --bs-secondary: #5e4d67 !important;
+  --bs-secondary-rgb: 94, 77, 103 !important;
+  --bs-secondary-text-emphasis: #dabdea !important;
+  --bs-secondary-bg-rgb: 33, 33, 33 !important;
+
+  /* Text Colors */
+  --bs-heading-color: #adefed !important;
+  --bs-body-color: #ffffff !important;
+  --bs-primary-color: #adefed !important;
+  --bs-secondary-color: #dabdea !important;
+}
+
+.row > * {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.text-primary {
+  color: var(--bs-primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--bs-secondary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+/* .color-bg-black {
+  background-color: #0f1312;
+}
+
+.color-text-cyan {
+  color: #adefed;
+}
+
+.color-bg-puple-dark {
+  background-color: #5e4d67;
+}
+
+.color-text-puple-light {
+  color: #dabdea;
+}
+.color-bg-puple-grey {
+  background-color: #212121;
+} */
+/* ///////////////////////////////////////////// */
+* {
+  font-family: "Lora";
+  font-family: "Nanum Brush Script";
+  font-family: "Aboreto";
+  margin-bottom: 0rem !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  list-style: none;
+  text-decoration: none;
+}
+/* .row {
+  padding-left: 0rem !important;
+  padding-right: 0 !important;
+} */
+
+h1 {
+  font-family: "Lora";
+  color: #ffffff !important;
+}
+h2 {
+  font-size: 1.3rem;
+  font-family: "Nanum Brush Script";
+}
+h3 {
+  font-family: "Lora";
+}
+h4 {
+  font-family: "Aboreto";
+}
+p {
+  font-family: "Lora";
+}
+a {
+  font-family: "Lora" !important;
+}
+.logo {
+  width: 100px;
+  height: auto;
+}
+.menu-logo {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+/* <!-- /////////////////////////////     * Banner *     ////////////////////////////// --> */
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../images/herobanner.jpg);
+  background-size: cover;
+  background-position: center center;
+  /* background-size: 100%, 130%;
+  background-position: 50% 45%; */
+  background-repeat: no-repeat;
+  height: 30rem;
+}
+/* <!-- /////////////////////////////     * banner *     ////////////////////////////// --> */
+
+.portrait-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../images/portrait.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.brand-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../images/brand-work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.car-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../images/car.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.showcase {
+  height: 30rem;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.portrait-card {
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+
+.brand-card {
+  grid-row: 1/6;
+  grid-column: 2/3;
+}
+
+.car-card {
+  grid-row: 4/6;
+  grid-column: 1/2;
+}
+
+/* <!-- /////////////////////////////     * about me *     ////////////////////////////// --> */
+
+.img-myself {
+  object-position: 100% 40%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.hi-text {
+  font-size: 3rem;
+  padding-top: 6rem;
+  padding-left: 4rem;
+}
+
+.social-icon a {
+  color: #ffffff;
+  font-size: 2rem;
+}
