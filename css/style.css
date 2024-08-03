@@ -2,7 +2,7 @@
 :root {
   /* Background Colors */
   --bs-body-bg: #0f1312 !important;
-  --bs-secondary: #5e4d67 !important;
+  --bs-secondary: #5d4d66 !important;
   --bs-secondary-rgb: 94, 77, 103 !important;
   --bs-secondary-text-emphasis: #dabdea !important;
   --bs-secondary-bg-rgb: 33, 33, 33 !important;
@@ -12,6 +12,12 @@
   --bs-body-color: #ffffff !important;
   --bs-primary-color: #adefed !important;
   --bs-secondary-color: #dabdea !important;
+  --fs-h2: 1.8rem;
+  --fs-h3: 2rem;
+  --fs-h4: 1.9rem;
+  --fs-h5: 2.2rem;
+  --fs-p: 1rem;
+  --fs-a: 1rem;
 }
 
 .row > * {
@@ -59,32 +65,46 @@
   padding: 0;
   border: 0;
   font-size: 100%;
-  list-style: none;
-  text-decoration: none;
+  list-style: none !important;
+  text-decoration: none !important;
 }
-/* .row {
-  padding-left: 0rem !important;
-  padding-right: 0 !important;
-} */
+
+.form-control {
+  background-color: rgba(93, 77, 102, 0.35) !important;
+  transition: box-shadow 0.4s ease, border-color 0.4s ease !important;
+}
+
+.form-control:focus {
+  border-color: #dabdea !important;
+  box-shadow: 0 0 8px rgba(255, 222, 247, 0.6) !important;
+}
 
 h1 {
   font-family: "Lora";
   color: #ffffff !important;
 }
 h2 {
-  font-size: 1.3rem;
+  font-size: var(--fs-h2) !important;
   font-family: "Nanum Brush Script";
 }
 h3 {
+  font-size: var(--fs-h3) !important;
   font-family: "Lora";
 }
 h4 {
+  font-size: var(--fs-h4) !important;
   font-family: "Aboreto";
 }
+h5 {
+  font-size: var(--fs-h5) !important;
+  font-family: "Nanum Brush Script";
+}
 p {
+  font-size: var(--fs-p) !important;
   font-family: "Lora";
 }
 a {
+  font-size: var(--fs-a) !important;
   font-family: "Lora" !important;
 }
 .logo {
@@ -94,6 +114,24 @@ a {
 .menu-logo {
   margin-left: 25px;
   margin-right: 25px;
+} /* <!-- /////////////////////////////     * dropdown meun *     ////////////////////////////// --> */
+.dropdown-menu-mine {
+  display: none;
+  background: rgba(33, 33, 33, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 0;
+  transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu-mine.open {
+  height: 345px;
+}
+.dropdown-menu-mine {
+  display: block;
+}
+.toggle_btn {
+  font-size: 2.5rem;
+  width: 100px;
 }
 /* <!-- /////////////////////////////     * Banner *     ////////////////////////////// --> */
 
@@ -107,7 +145,19 @@ a {
   background-repeat: no-repeat;
   height: 30rem;
 }
-/* <!-- /////////////////////////////     * banner *     ////////////////////////////// --> */
+
+.btn:hover {
+  background-color: #dabdea !important;
+  border-color: #dabdea !important;
+  color: #ffffff !important;
+}
+
+.btn:active {
+  background-color: #5e4d67 !important;
+  border-color: #dabdea !important;
+  color: #887594 !important;
+}
+/* <!-- /////////////////////////////     * Showcase *     ////////////////////////////// --> */
 
 .portrait-card {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
@@ -172,4 +222,58 @@ a {
 .social-icon a {
   color: #ffffff;
   font-size: 2rem;
+}
+
+/* <!-- /////////////////////////////      * ******** *      ////////////////////////////// --> */
+/* <!-- /////////////////////////////     * About page *     ////////////////////////////// --> */
+/* <!-- /////////////////////////////      * ******** *      ////////////////////////////// --> */
+
+.img-myself-about {
+  height: auto;
+  object-fit: cover;
+}
+
+.aboutp-photo-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../images/about-imgone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutp-photo-bg-two {
+  background-image: url(../images/about-imgtwo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* <!-- /////////////////////////////      * ******** *      ////////////////////////////// --> */
+/* <!-- /////////////////////////////     * Contact page *     ////////////////////////////// --> */
+/* <!-- /////////////////////////////      * ******** *      ////////////////////////////// --> */
+
+.contactp-img-one {
+  height: 35rem;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.contactp-img-two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/groupimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-h2: 2rem;
+    --fs-h3: 2.3rem;
+    --fs-h4: 2.1rem;
+    --fs-h5: 2.6rem;
+    --fs-p: 1.2rem;
+    --fs-a: 1.2rem;
+  }
 }
