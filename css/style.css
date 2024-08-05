@@ -41,8 +41,8 @@
 .btn-nav {
   color: #ffffff;
   padding-bottom: 0.6rem;
-  border-bottom: 1.5px solid #415f5e;
-  transition: color, border 0.7s ease;
+  border-bottom: 1.2px solid rgba(173, 239, 237, 0.128);
+  transition: color, border 0.7s ease-in-out;
 }
 
 .btn-nav:hover {
@@ -180,7 +180,26 @@ a {
   background-position: 50% 45%; */
   background-repeat: no-repeat;
   height: 30rem;
+  animation: fadeInUp 4s ease forwards;
 }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  0% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center center;
+  }
+}
+
 .btn {
   font-size: var(--fs-btn) !important;
 }
