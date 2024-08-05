@@ -18,6 +18,7 @@
   --fs-h5: 2.2rem;
   --fs-p: 1rem;
   --fs-a: 1rem;
+  --fs-btn: 1.1rem;
 }
 
 .row > * {
@@ -35,6 +36,21 @@
 
 .bg-primary {
   background-color: var(--bs-primary) !important;
+}
+
+.btn-nav {
+  color: #ffffff;
+  padding-bottom: 0.6rem;
+  border-bottom: 1.5px solid #415f5e;
+  transition: color, border 0.7s ease;
+}
+
+.btn-nav:hover {
+  color: rgb(218, 189, 234);
+  padding-bottom: 0.6rem;
+  border-bottom: 1.2px solid rgba(173, 239, 237, 0.877);
+  text-shadow: 0 0 4px rgba(218, 189, 234, 0.5);
+  transition: all 0.3s ease-in-out;
 }
 
 /* .color-bg-black {
@@ -69,6 +85,24 @@
   text-decoration: none !important;
 }
 
+input::placeholder,
+textarea::placeholder {
+  font-family: "Lora", sans-serif !important;
+  font-size: 16px;
+  color: #dabdea7a !important;
+}
+
+textarea {
+  font-family: "Lora", sans-serif !important;
+  font-size: 16px;
+  color: #dabdea !important;
+}
+
+input {
+  font-family: "Lora", sans-serif !important;
+  font-size: 16px;
+  color: #dabdea !important;
+}
 .form-control {
   background-color: rgba(93, 77, 102, 0.35) !important;
   transition: box-shadow 0.4s ease, border-color 0.4s ease !important;
@@ -104,9 +138,10 @@ p {
   font-family: "Lora";
 }
 a {
-  font-size: var(--fs-a) !important;
+  font-size: var(--fs-a);
   font-family: "Lora" !important;
 }
+
 .logo {
   width: 100px;
   height: auto;
@@ -122,6 +157,7 @@ a {
   overflow: hidden;
   height: 0;
   transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: absolute;
 }
 .dropdown-menu-mine.open {
   height: 345px;
@@ -145,7 +181,9 @@ a {
   background-repeat: no-repeat;
   height: 30rem;
 }
-
+.btn {
+  font-size: var(--fs-btn) !important;
+}
 .btn:hover {
   background-color: #dabdea !important;
   border-color: #dabdea !important;
@@ -221,7 +259,7 @@ a {
 
 .social-icon a {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 /* <!-- /////////////////////////////      * ******** *      ////////////////////////////// --> */
@@ -229,7 +267,7 @@ a {
 /* <!-- /////////////////////////////      * ******** *      ////////////////////////////// --> */
 
 .img-myself-about {
-  height: auto;
+  height: 33rem;
   object-fit: cover;
 }
 
@@ -253,9 +291,9 @@ a {
 /* <!-- /////////////////////////////      * ******** *      ////////////////////////////// --> */
 
 .contactp-img-one {
-  height: 35rem;
+  height: 45rem;
+  width: 100%;
   object-fit: cover;
-  object-position: center 60%;
 }
 
 .contactp-img-two {
@@ -267,6 +305,12 @@ a {
   height: 20rem;
 }
 
+input,
+textarea {
+  font-family: "Arial", sans-serif; /* Change this to your desired font */
+  font-size: 16px; /* Optional: change font size */
+}
+
 @media (min-width: 768px) {
   :root {
     --fs-h2: 2rem;
@@ -275,5 +319,88 @@ a {
     --fs-h5: 2.6rem;
     --fs-p: 1.2rem;
     --fs-a: 1.2rem;
+    --fs-btn: 1.3rem;
+  }
+
+  .banner {
+    height: 40rem;
+  }
+
+  .dropdown-menu-mine {
+    display: block;
+    overflow: visible;
+    position: static;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .showcase {
+    height: 55rem;
+  }
+
+  .img-myself {
+    height: 35rem;
+  }
+
+  .img-myself-about {
+    height: 25rem;
+    object-fit: cover;
+  }
+  .aboutp-photo-bg {
+    height: 25rem;
+  }
+
+  .contactp-img-one {
+    height: 35rem;
+    width: 35rem;
+    object-fit: cover;
+  }
+
+  .contactp-img-two {
+    height: 30rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --fs-h2: 2.2rem;
+    --fs-h3: 2.5rem;
+    --fs-h4: 2.3rem;
+    --fs-h5: 2.8rem;
+    --fs-btn: 1.4rem;
+  }
+
+  .banner {
+    height: 50rem;
+  }
+
+  .showcase {
+    height: 60rem;
+  }
+
+  .img-myself {
+    height: 30rem;
+  }
+
+  .img-myself-about {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .aboutp-photo-bg {
+    height: 30rem;
+  }
+
+  .contact-form {
+    max-width: 40rem !important;
+  }
+
+  .contactp-img-one {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .contactp-img-two {
+    height: 45rem;
   }
 }

@@ -27,18 +27,54 @@
 
     <header>
       <div
-        class="color-bg-black d-flex flex-row justify-content-center align-items-center justify-content-between"
+        class="color-bg-black d-flex flex-row justify-content-center align-items-center justify-content-between justify-content-md-start"
       >
-        <img src="images/Logo-v2.png" class="logo" alt="logo" />
-        <h1 class="text-uppercase mb-0 text-center">Ivan Lau</h1>
-        <div class="toggle_btn text-center">
-          <i class="fa-solid fa-bars"></i>
+        <a class="pe-auto" href="home.html">
+          <img
+            href="home.html"
+            src="images/Logo-v2.png"
+            class="logo"
+            alt="logo"
+          />
+        </a>
+        <a href="home.html">
+          <h1 class="text-uppercase mb-0 text-center">Ivan Lau</h1>
+        </a>
+        <div class="toggle_btn text-center d-md-none">
+          <i class="fa-solid fa-bars pe-auto"></i>
         </div>
+
+        <nav class="d-none d-md-block flex-grow-1">
+          <ul
+            class="text-center d-md-block d-md-flex flex-md-row justify-content-md-evenly justify-content-xl-end me-xl-3"
+          >
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="home.html">Home</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="#">Video</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="#">photo</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="#">graphic</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="about.html">about</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div>
-        <ul class="dropdown-menu-mine position-absolute end-0 text-center px-5">
+      <nav>
+        <ul
+          class="dropdown-menu-mine end-0 text-center px-5 d-md-block d-md-flex d-md-none"
+        >
           <li class="py-3 px-5">
-            <a class="text-uppercase text-light" href="#">Home</a>
+            <a class="text-uppercase text-light" href="home.html">Home</a>
           </li>
           <li class="py-3 px-5">
             <a class="text-uppercase text-light" href="#">Video</a>
@@ -50,13 +86,13 @@
             <a class="text-uppercase text-light" href="#">graphic</a>
           </li>
           <li class="py-3 px-5">
-            <a class="text-uppercase text-light" href="#">about</a>
+            <a class="text-uppercase text-light" href="about.html">about</a>
           </li>
           <li class="py-3 px-5">
-            <a class="text-uppercase text-light" href="#">Contact</a>
+            <a class="text-uppercase text-light" href="contact.html">Contact</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <script>
@@ -79,7 +115,7 @@
     <!-- /////////////////////////////     * Title *     ////////////////////////////// -->
     <section>
       <div class="container-fluid">
-        <h2 class="text-secondary-emphasis text-center">
+        <h2 class="text-secondary-emphasis text-center py-md-4">
           "Sometimes you just need to have the courage to take action."
         </h2>
       </div>
@@ -88,40 +124,48 @@
     <!-- /////////////////////////////     * About me *     ////////////////////////////// -->
     <section>
       <div class="container-fluid">
-        <div class="d-flex flex-column mx-2 mt-3">
+        <div
+          class="d-flex flex-column flex-md-row mx-2 mt-3 gap-md-4 mx-xl-5 my-xl-5"
+        >
           <img
             class="img-myself-about rounded w-100"
             src="images/myself.jpg"
             alt="myself"
           />
-          <div>
-            <h4 class="text-uppercase text-center mt-4">About me</h4>
-            <p>
-              Hi there! I'm Ivan Lau from Hong Kong, currently studying at
-              Algonquin College. My journey into the world of photography and
-              videography began the moment I picked up a camera—I immediately
-              fell in love with capturing moments and telling stories through
-              the lens. Whether it's through still images or dynamic videos, I'm
-              always exploring new ways to create unique art.
-            </p>
+          <div class="w-100 d-flex align-items-center">
+            <div>
+              <h4 class="text-uppercase text-center mt-4 mb-3">About me</h4>
+              <p>
+                Hi there! I'm Ivan Lau from Hong Kong, currently studying at
+                Algonquin College. My journey into the world of photography and
+                videography began the moment I picked up a camera—I immediately
+                fell in love with capturing moments and telling stories through
+                the lens. Whether it's through still images or dynamic videos,
+                I'm always exploring new ways to create unique art.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- /////////////////////////////     * CREATe & EvOLVE *     ////////////////////////////// -->
     <section class="container-fluid">
-      <div class="d-flex flex-row gap-3 m-2 mb-4 mt-4">
+      <div class="d-flex flex-row gap-3 m-2 mb-4 mt-4 mx-xl-5 my-xl-5">
         <div class="w-50">
-          <div>
-            <h4 class="text-uppercase text-center">CREATE & EVOLVE</h4>
+          <div class="mb-5">
+            <h4 class="text-uppercase text-center mb-4">CREATE & EVOLVE</h4>
             <p>
               My life is all about creating and evolving, and that's also what
-              my personal brand, Dareio Visuels, aims to bring to the world. I'm
-              excited to share my journey with you. Check out my work and let's
-              see how we can work together to bring your vision to life!
+              my personal brand,
+              <a class="fw-bold text-light">Dareio Visuels</a>, aims to bring to
+              the world. I'm excited to share my journey with you. Check out my
+              work and let's see how we can work together to bring your vision
+              to life!
             </p>
           </div>
-          <div class="mt-5 aboutp-photo-bg">
+          <div
+            class="mt-5 aboutp-photo-bg d-flex flex-column justify-content-evenly"
+          >
             <h2 class="text-light text-center py-5 px-2">
               "Every photos I took tells a story."
             </h2>
@@ -134,7 +178,7 @@
             </div>
           </div>
         </div>
-        <div class="h-auto w-50 aboutp-photo-bg-two"></div>
+        <div class="w-50 aboutp-photo-bg-two h-auto"></div>
       </div>
     </section>
 

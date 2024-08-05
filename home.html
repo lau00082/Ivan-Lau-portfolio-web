@@ -27,7 +27,7 @@
 
     <header>
       <div
-        class="color-bg-black d-flex flex-row justify-content-center align-items-center justify-content-between"
+        class="color-bg-black d-flex flex-row justify-content-center align-items-center justify-content-between justify-content-md-start"
       >
         <a class="pe-auto" href="home.html">
           <img
@@ -37,15 +37,44 @@
             alt="logo"
           />
         </a>
-        <h1 class="text-uppercase mb-0 text-center">Ivan Lau</h1>
-        <div class="toggle_btn text-center">
+        <a href="home.html">
+          <h1 class="text-uppercase mb-0 text-center">Ivan Lau</h1>
+        </a>
+        <div class="toggle_btn text-center d-md-none">
           <i class="fa-solid fa-bars pe-auto"></i>
         </div>
+
+        <nav class="d-none d-md-block flex-grow-1">
+          <ul
+            class="text-center d-md-block d-md-flex flex-md-row justify-content-md-evenly justify-content-xl-end me-xl-3"
+          >
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="home.html">Home</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="#">Video</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="#">photo</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="#">graphic</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="about.html">about</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div>
-        <ul class="dropdown-menu-mine position-absolute end-0 text-center px-5">
+      <nav>
+        <ul
+          class="dropdown-menu-mine end-0 text-center px-5 d-md-block d-md-flex d-md-none"
+        >
           <li class="py-3 px-5">
-            <a class="text-uppercase text-light" href="#">Home</a>
+            <a class="text-uppercase text-light" href="home.html">Home</a>
           </li>
           <li class="py-3 px-5">
             <a class="text-uppercase text-light" href="#">Video</a>
@@ -57,13 +86,13 @@
             <a class="text-uppercase text-light" href="#">graphic</a>
           </li>
           <li class="py-3 px-5">
-            <a class="text-uppercase text-light" href="#">about</a>
+            <a class="text-uppercase text-light" href="about.html">about</a>
           </li>
           <li class="py-3 px-5">
-            <a class="text-uppercase text-light" href="#">Contact</a>
+            <a class="text-uppercase text-light" href="contact.html">Contact</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <script>
@@ -87,7 +116,7 @@
 
     <section>
       <div
-        class="banner d-flex flex-column justify-content-end align-items-end pb-3 pe-4 container-fluid"
+        class="banner d-flex flex-column justify-content-end align-items-end pb-3 pe-4 pb-xl-5 pe-xl-5 container-fluid"
       >
         <h2 class="text-uppercase lh-1">creative agency</h2>
         <h3 class="text-uppercase mb-2 text-light lh-1">Dareio Visuals</h3>
@@ -103,12 +132,14 @@
     <!-- /////////////////////////////     * showcase *     ////////////////////////////// -->
 
     <section class="container-fluid">
-      <div class="showcase gap-3 my-4 mx-2">
+      <div
+        class="showcase gap-3 my-4 mx-2 gap-md-4 mx-md-4 my-md-5 mx-xl-5 my-xl-5"
+      >
         <h5 class="portrait-card p-4 text-light rounded">Portrait</h5>
         <h5 class="car-card p-4 text-light rounded">Car</h5>
         <h5 class="brand-card p-4 text-light rounded">Brand work</h5>
       </div>
-      <div class="border m-3"></div>
+      <div class="border m-3 mx-xl-5"></div>
     </section>
     <!-- /////////////////////////////     * about-me *     ////////////////////////////// -->
 
@@ -118,32 +149,42 @@
         <h2 class="text-center text-secondary-emphasis">
           “Forever creating never stop evolving”
         </h2>
-        <div class="position-relative">
+        <div
+          class="position-relative d-xl-flex flex-xl-row gap-xl-4 mx-xl-5 mb-xl-5"
+        >
           <img
             class="img-myself w-100 mt-3 rounded"
             src="images/myself.jpg"
             alt="myself"
           />
+
           <h5 class="hi-text position-absolute top-0 start-0 text-light">
             Hi, I am Ivan!
           </h5>
-          <h4 class="text-uppercase fw-lighter my-4 text-center">Who am I?</h4>
-          <p class="mb-3 fw-lighter">
-            I am an international student from Hong Kong currently studying in
-            Canada. I am a photographer, videographer, and designer. Whenever
-            the world needs some creativity, I would love to be there.
-          </p>
-          <p>
-            My life is all about creating and exploring! Check out my work and
-            let’s work together. I am here to bring your vision to life!
-          </p>
-          <div class="text-center my-4">
-            <a
-              class="text-uppercase btn btn-outline-light rounded-pill bg-secondary px-4"
-              href="contact.html"
-            >
-              Contact
-            </a>
+          <div class="w-100 d-xl-flex align-items-xl-center">
+            <div>
+              <h4 class="text-uppercase fw-lighter my-4 text-center">
+                Who am I?
+              </h4>
+              <p class="mb-3 fw-lighter">
+                I am an international student from Hong Kong currently studying
+                in Canada. I am a photographer, videographer, and designer.
+                Whenever the world needs some creativity, I would love to be
+                there.
+              </p>
+              <p>
+                My life is all about creating and exploring! Check out my work
+                and let’s work together. I am here to bring your vision to life!
+              </p>
+              <div class="text-center my-4 mb-md-5">
+                <a
+                  class="text-uppercase btn btn-outline-light rounded-pill bg-secondary px-4"
+                  href="contact.html"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
