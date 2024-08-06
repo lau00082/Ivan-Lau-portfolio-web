@@ -180,7 +180,7 @@ a {
   background-position: 50% 45%; */
   background-repeat: no-repeat;
   height: 30rem;
-  animation: fadeInUp 4s ease forwards;
+  animation: fadeInUp 2s ease forwards;
 }
 
 @keyframes fadeInUp {
@@ -394,7 +394,7 @@ textarea {
   }
 
   .showcase {
-    height: 60rem;
+    height: 70rem;
   }
 
   .img-myself {
