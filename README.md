@@ -1,4 +1,4 @@
-# Dareio Visuels Portfolio
+# Dareio Visuals Portfolio
 
 Welcome to the Ivan Lau portfolio repository. This document outlines the development process, challenges, solutions, and resources used.
 
