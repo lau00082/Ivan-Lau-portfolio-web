@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a147245d39.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- /////////////////////////////     * Header *     ////////////////////////////// -->
+
+    <header>
+      <div
+        class="color-bg-black d-flex flex-row justify-content-center align-items-center justify-content-between justify-content-md-start"
+      >
+        <a class="pe-auto" href="home.html">
+          <img src="images/Logo-v2.png" class="logo" alt="logo" />
+        </a>
+        <a href="home.html">
+          <h1 class="text-uppercase mb-0 text-center">Ivan Lau</h1>
+        </a>
+        <div class="toggle_btn text-center d-md-none">
+          <i class="fa-solid fa-bars pe-auto"></i>
+        </div>
+
+        <nav class="d-none d-md-block flex-grow-1">
+          <ul
+            class="text-center d-md-block d-md-flex flex-md-row justify-content-md-evenly justify-content-xl-end me-xl-3"
+          >
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="home.html">Home</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="video.html">Video</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a
+                class="btn-nav text-uppercase"
+                href="https://dareiolau.myportfolio.com/"
+                target="_blank"
+                >photo</a
+              >
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="design.html">design</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="about.html">about</a>
+            </li>
+            <li class="py-3 px-2 px-xl-4">
+              <a class="btn-nav text-uppercase" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav>
+        <ul
+          class="dropdown-menu-mine end-0 text-center px-5 d-md-block d-md-flex d-md-none"
+        >
+          <li class="py-3 px-5">
+            <a class="text-uppercase text-light" href="home.html">Home</a>
+          </li>
+          <li class="py-3 px-5">
+            <a class="text-uppercase text-light" href="video.html">Video</a>
+          </li>
+          <li class="py-3 px-5">
+            <a
+              class="btn-nav text-uppercase"
+              href="https://dareiolau.myportfolio.com/"
+              target="_blank"
+              >photo</a
+            >
+          </li>
+          <li class="py-3 px-5">
+            <a class="text-uppercase text-light" href="design.html">design</a>
+          </li>
+          <li class="py-3 px-5">
+            <a class="text-uppercase text-light" href="about.html">about</a>
+          </li>
+          <li class="py-3 px-5">
+            <a class="text-uppercase text-light" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Design Portfolio Section -->
+    <section class="py-5">
+      <div class="container-fluid">
+        <h2 class="text-center mb-5 animate__animated animate__slideInDown">
+          "Where creativity meets purpose"
+        </h2>
+
+        <!-- Category Filters -->
+        <div class="text-center mb-4">
+          <div class="btn-group" role="group" aria-label="Design categories">
+            <button
+              type="button"
+              class="btn btn-outline-secondary active"
+              data-filter="all"
+            >
+              All Works
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-filter="branding"
+            >
+              Branding
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-filter="print"
+            >
+              Print
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-filter="web"
+            >
+              Web Design
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-filter="ui"
+            >
+              UI/UX
+            </button>
+          </div>
+        </div>
+
+        <!-- Design Grid -->
+        <div class="container px-4">
+          <div class="row g-5">
+            <!-- Design Project 1 -->
+            <div class="col-12 col-md-6 design-item" data-category="branding">
+              <div class="project-card">
+                <img
+                  src="images/project01.jpg"
+                  alt="Project Title"
+                  class="project-image"
+                />
+                <div class="project-overlay animate__animated">
+                  <div class="project-content">
+                    <span class="project-category mb-2">Branding</span>
+                    <h4 class="text-uppercase mb-3">Project Title</h4>
+                    <p class="project-description mb-4">
+                      A comprehensive brand identity design that captures the
+                      essence of modern aesthetics while maintaining
+                      functionality and recognition.
+                    </p>
+                    <a href="#" class="btn btn-outline-light rounded-pill"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Design Project 2 -->
+            <div class="col-12 col-md-6 design-item" data-category="web ui">
+              <div class="project-card">
+                <img
+                  src="images/project02.jpeg"
+                  alt="Website Redesign"
+                  class="project-image"
+                />
+                <div class="project-overlay animate__animated">
+                  <div class="project-content">
+                    <span class="project-category mb-2">Web Design</span>
+                    <span class="project-category mb-2">UI/UX</span>
+                    <h4 class="text-uppercase mb-3">Website Redesign</h4>
+                    <p class="project-description mb-4">
+                      A complete website overhaul focusing on user experience
+                      and modern design principles, resulting in improved
+                      engagement and functionality.
+                    </p>
+                    <a href="#" class="btn btn-outline-light rounded-pill"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Design Project 3 -->
+            <div class="col-12 col-md-6 design-item" data-category="print">
+              <div class="project-card">
+                <img
+                  src="path/to/your/image.jpg"
+                  alt="Print Design"
+                  class="project-image"
+                />
+                <div class="project-overlay animate__animated">
+                  <div class="project-content">
+                    <span class="project-category mb-2">Print</span>
+                    <h4 class="text-uppercase mb-3">Print Campaign</h4>
+                    <p class="project-description mb-4">
+                      A series of print materials designed to create a cohesive
+                      and impactful marketing campaign across various platforms.
+                    </p>
+                    <a href="#" class="btn btn-outline-light rounded-pill"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more projects following the same pattern -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////////////////////     * footer *     ////////////////////////////// -->
+
+    <footer>
+      <div class="bg-body-secondary pt-4">
+        <div class="social-icon d-flex justify-content-evenly mx-5">
+          <a href="https://www.instagram.com/lil.v4n/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@DareioVisuels" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lauchunngai/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/lau00082" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <p class="text-center text-white py-3 fs-6">
+          &copy; 2024 Dareio Visuals. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Filter functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll("[data-filter]");
+        const designItems = document.querySelectorAll(".design-item");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const filterValue = this.getAttribute("data-filter");
+
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            designItems.forEach((item) => {
+              const categories = item.getAttribute("data-category").split(" ");
+              if (filterValue === "all" || categories.includes(filterValue)) {
+                item.classList.remove("d-none");
+              } else {
+                item.classList.add("d-none");
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+    <!-- /////////////////////////////     * Header *     ////////////////////////////// -->
+  </body>
+</html>
