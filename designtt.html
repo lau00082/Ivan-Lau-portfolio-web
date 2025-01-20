@@ -128,31 +128,6 @@
             >
               All Works
             </button>
-
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-filter="web"
-            >
-              Web Design
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-filter="ui"
-            >
-              UI/UX
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-outline-secondary"
-              data-filter="grapics"
-            >
-              Grapics
-            </button>
-
             <button
               type="button"
               class="btn btn-outline-secondary"
@@ -160,13 +135,26 @@
             >
               Branding
             </button>
-
             <button
               type="button"
               class="btn btn-outline-secondary"
               data-filter="print"
             >
               Print
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-filter="web"
+            >
+              Web Design
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-filter="ui"
+            >
+              UI/UX
             </button>
           </div>
         </div>
@@ -175,24 +163,8 @@
         <div class="container px-4">
           <div class="row g-5">
             <!-- Design Project 1 -->
-            <div
-              class="col-12 col-md-6 design-item"
-              data-category="branding grapics printer"
-            >
-              <div
-                class="project-card"
-                data-project='{
-                  "title": "Pixie Branding",
-                  "description": "",
-                  "images": [
-                  "images/design-pixie.jpg",
-                  "images/pixie01.jpg",
-                   "images/pixie02.jpg",
-                  "images/pixie03.jpg",
-                  "images/pixie04.jpg"
-                   ]
-              }'
-              >
+            <div class="col-12 col-md-6 design-item" data-category="branding">
+              <div class="project-card">
                 <img
                   src="images/design-pixie.jpg"
                   alt="Project Title"
@@ -201,8 +173,6 @@
                 <div class="project-overlay animate__animated">
                   <div class="project-content">
                     <span class="project-category mb-2">Branding</span>
-                    <span class="project-category mb-2">Grapics</span>
-                    <span class="project-category mb-2">Print</span>
                     <h4 class="text-uppercase mb-3">Project Title</h4>
                     <p class="project-description mb-4">
                       A comprehensive brand identity design that captures the
@@ -212,9 +182,9 @@
                     <!-- Replace your existing "View Project" buttons -->
                     <a
                       href="#"
-                      class="btn btn-outline-light rounded-pill view-project-btn"
-                    >
-                      View Project</a
+                      class="btn btn-outline-light rounded-pill"
+                      data-pdf="pdfs/Chun NgaiA01 (2).pdf"
+                      >View Project</a
                     >
                   </div>
                 </div>
@@ -222,27 +192,8 @@
             </div>
 
             <!-- Design Project 2 -->
-            <div
-              class="col-12 col-md-6 design-item"
-              data-category="branding ui grapics"
-            >
-              <div
-                class="project-card"
-                data-project='{
-                      "title": "Website Redesign",
-                      "description": "A complete website overhaul focusing on user experience and modern design principles, resulting in improved engagement and functionality.",
-                    "images": ["images/brand-pa.jpg", 
-                    "projimgs/patagonia01.jpg",
-                    "projimgs/patagonia02.jpg",
-                    "projimgs/patagonia03.jpg",
-                     "projimgs/patagonia04.jpg",
-                    "projimgs/patagonia05.jpg",
-                    "projimgs/patagonia06.jpg",
-                     "projimgs/patagonia07.jpg",
-                    "projimgs/patagonia08.jpg"]
-                    
-                }'
-              >
+            <div class="col-12 col-md-6 design-item" data-category="web ui">
+              <div class="project-card">
                 <img
                   src="images/brand-pa.jpg"
                   alt="Website Redesign"
@@ -250,18 +201,15 @@
                 />
                 <div class="project-overlay animate__animated">
                   <div class="project-content">
-                    <span class="project-category mb-2">Branding</span>
+                    <span class="project-category mb-2">Web Design</span>
                     <span class="project-category mb-2">UI/UX</span>
-                    <span class="project-category mb-2">Grapics</span>
                     <h4 class="text-uppercase mb-3">Website Redesign</h4>
                     <p class="project-description mb-4">
                       A complete website overhaul focusing on user experience
                       and modern design principles, resulting in improved
                       engagement and functionality.
                     </p>
-                    <a
-                      href="#"
-                      class="btn btn-outline-light rounded-pill view-project-btn"
+                    <a href="#" class="btn btn-outline-light rounded-pill"
                       >View Project</a
                     >
                   </div>
@@ -270,33 +218,8 @@
             </div>
 
             <!-- Design Project 3 -->
-            <div
-              class="col-12 col-md-6 design-item"
-              data-category="branding grapics ui print"
-            >
-              <div
-                class="project-card"
-                data-project='{
-                  "title": "Print Campaign",
-                  "description":"A series of print materials designed to create a cohesive and impactful marketing campaign across various platforms.",
-                "images": ["images/brand-swing.jpeg",        
-                "projimgs/swing00.jpg",
-                "projimgs/swing01.jpg",
-                "projimgs/swing02.jpg",
-                 "projimgs/swing03.jpg",
-                "projimgs/swing04.jpg",
-                 "projimgs/swing05.jpg",
-                "projimgs/swing06.jpg",
-                "projimgs/swing07.jpg",
-                 "projimgs/swing08.jpg",
-                  "projimgs/swing09.jpg",
-                "projimgs/swing10.jpg",
-                 "projimgs/swing11.jpg",
-                "projimgs/swing12.jpg",
-               "projimgs/swing13.jpg"]
-
-                }'
-              >
+            <div class="col-12 col-md-6 design-item" data-category="print">
+              <div class="project-card">
                 <img
                   src="images/brand-swing.jpeg"
                   alt="Print Design"
@@ -304,18 +227,13 @@
                 />
                 <div class="project-overlay animate__animated">
                   <div class="project-content">
-                    <span class="project-category mb-2">Branding</span>
-                    <span class="project-category mb-2">UI/UX</span>
-                    <span class="project-category mb-2">Grapics</span>
                     <span class="project-category mb-2">Print</span>
                     <h4 class="text-uppercase mb-3">Print Campaign</h4>
                     <p class="project-description mb-4">
                       A series of print materials designed to create a cohesive
                       and impactful marketing campaign across various platforms.
                     </p>
-                    <a
-                      href="#"
-                      class="btn btn-outline-light rounded-pill view-project-btn"
+                    <a href="#" class="btn btn-outline-light rounded-pill"
                       >View Project</a
                     >
                   </div>
@@ -324,18 +242,8 @@
             </div>
 
             <!-- Design Project 4 -->
-            <div
-              class="col-12 col-md-6 design-item"
-              data-category="grapics print"
-            >
-              <div
-                class="project-card"
-                data-project='{
-                "title": "Print Campaign",
-                "description":"A series of print materials designed to create a cohesive and impactful marketing campaign across various platforms.",
-                  "images": ["images/design-poster.jpg", "images/design-poster-2.png"]
-                  }'
-              >
+            <div class="col-12 col-md-6 design-item" data-category="print">
+              <div class="project-card">
                 <img
                   src="images/design-poster.jpg"
                   alt="Print Design"
@@ -343,16 +251,13 @@
                 />
                 <div class="project-overlay animate__animated">
                   <div class="project-content">
-                    <span class="project-category mb-2">Grapics</span>
                     <span class="project-category mb-2">Print</span>
                     <h4 class="text-uppercase mb-3">Print Campaign</h4>
                     <p class="project-description mb-4">
                       A series of print materials designed to create a cohesive
                       and impactful marketing campaign across various platforms.
                     </p>
-                    <a
-                      href="#"
-                      class="btn btn-outline-light rounded-pill view-project-btn"
+                    <a href="#" class="btn btn-outline-light rounded-pill"
                       >View Project</a
                     >
                   </div>
@@ -361,7 +266,7 @@
             </div>
 
             <!-- Design Project 5 -->
-            <div class="col-12 col-md-6 design-item" data-category="web ui">
+            <div class="col-12 col-md-6 design-item" data-category="print">
               <div class="project-card">
                 <img
                   src="images/project05t2.gif"
@@ -370,17 +275,13 @@
                 />
                 <div class="project-overlay animate__animated">
                   <div class="project-content">
-                    <span class="project-category mb-2">Web Design</span>
-                    <span class="project-category mb-2">UI/UX</span>
+                    <span class="project-category mb-2">Print</span>
                     <h4 class="text-uppercase mb-3">Print Campaign</h4>
                     <p class="project-description mb-4">
                       A series of print materials designed to create a cohesive
                       and impactful marketing campaign across various platforms.
                     </p>
-                    <a
-                      href="https://lau00082.github.io/mtm6201-midterm/"
-                      target="_blank"
-                      class="btn btn-outline-light rounded-pill"
+                    <a href="#" class="btn btn-outline-light rounded-pill"
                       >View Project</a
                     >
                   </div>
@@ -389,26 +290,19 @@
             </div>
             <!-- Design Project 6 -->
 
-            <div class="col-12 col-md-6 design-item" data-category="web ui">
+            <div class="col-12 col-md-6 design-item" data-category="print">
               <div class="project-card">
-                <img
-                  src="images/web-3star.gif"
-                  alt="Print Design"
-                  class="project-image"
-                />
+                <img src="images/web-3star.gif"" alt="Print Design"
+                class="project-image" />
                 <div class="project-overlay animate__animated">
                   <div class="project-content">
-                    <span class="project-category mb-2">Web Design</span>
-                    <span class="project-category mb-2">UI/UX</span>
+                    <span class="project-category mb-2">Print</span>
                     <h4 class="text-uppercase mb-3">Print Campaign</h4>
                     <p class="project-description mb-4">
                       A series of print materials designed to create a cohesive
                       and impactful marketing campaign across various platforms.
                     </p>
-                    <a
-                      href="https://lau00082.github.io/final-project/"
-                      target="_blank"
-                      class="btn btn-outline-light rounded-pill"
+                    <a href="#" class="btn btn-outline-light rounded-pill"
                       >View Project</a
                     >
                   </div>
@@ -418,35 +312,19 @@
 
             <!-- Design Project 7 -->
 
-            <div
-              class="col-12 col-md-6 design-item"
-              data-category="grapics print"
-            >
-              <div
-                class="project-card"
-                data-project='{
-                      "title": "Print Campaign",
-                      "description":"A series of print materials designed to create a cohesive and impactful marketing campaign across various platforms.",
-                      "images":["images/design-spiderman.png", "images/design-spiderman-2.png"]
-                  }'
-              >
-                <img
-                  src="images/design-spiderman.png"
-                  alt="Print Design"
-                  class="project-image"
-                />
+            <div class="col-12 col-md-6 design-item" data-category="print">
+              <div class="project-card">
+                <img src="images/design-spiderman.png"" alt="Print Design"
+                class="project-image" />
                 <div class="project-overlay animate__animated">
                   <div class="project-content">
-                    <span class="project-category mb-2">Grapics</span>
                     <span class="project-category mb-2">Print</span>
                     <h4 class="text-uppercase mb-3">Print Campaign</h4>
                     <p class="project-description mb-4">
                       A series of print materials designed to create a cohesive
                       and impactful marketing campaign across various platforms.
                     </p>
-                    <a
-                      href="#"
-                      class="btn btn-outline-light rounded-pill view-project-btn"
+                    <a href="#" class="btn btn-outline-light rounded-pill"
                       >View Project</a
                     >
                   </div>
@@ -504,7 +382,7 @@
         </div>
 
         <p class="text-center text-white py-3 fs-6">
-          © 2024 Dareio Visuals. All Rights Reserved.
+          &copy; 2024 Dareio Visuals. All Rights Reserved.
         </p>
       </div>
     </footer>
@@ -575,18 +453,12 @@
             viewerContainer.classList.add("active");
             body.style.overflow = "hidden"; // Prevent scrolling on the body
             viewerContent.scrollTop = 0;
-            viewerContainer.style.visibility = "visible";
           });
         });
 
         function closeViewer() {
           viewerContainer.classList.remove("active");
           body.style.overflow = ""; // Allow scrolling again
-          setTimeout(() => {
-            viewerImageSlider.innerHTML = "";
-            viewerContainer.style.visibility = "hidden";
-          }, 300);
-          viewerContainer.style.visibility = "visible"; // Allow scrolling again
         }
 
         viewerOverlay.addEventListener("click", closeViewer);
