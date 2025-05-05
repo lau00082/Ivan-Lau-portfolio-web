@@ -1,4 +1,5 @@
 # Dareio Visuals Portfolio
+https://lau00082.github.io/Ivan-Lau-portfolio-web/home.html
 
 Welcome to the Ivan Lau portfolio repository. This document outlines the development process, challenges, solutions, and resources used.
 
