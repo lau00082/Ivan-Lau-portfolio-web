@@ -19,6 +19,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="icon" href="images/Logo-v1w.ico" type="icon" />
 
@@ -26,6 +30,12 @@
       src="https://kit.fontawesome.com/a147245d39.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      h1 {
+        font-family: "Newsreader", serif !important;
+        color: #ffffff !important;
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -37,7 +47,7 @@
           <img src="images/Logo-v2.png" class="logo" alt="logo" />
         </a>
         <a href="home.html">
-          <h1 class="text-uppercase mb-0 text-center">Ivan Lau</h1>
+          <h1 class="text-uppercase mb-0 text-center">Dareio Visuals</h1>
         </a>
         <div class="toggle_btn text-center d-md-none">
           <i class="fa-solid fa-bars pe-auto"></i>
@@ -58,7 +68,7 @@
             <li class="py-3 px-2 px-xl-4">
               <a
                 class="btn-nav text-uppercase"
-                href="https://dareiolau.myportfolio.com/"
+                href="https://dareiovisuals.myportfolio.com/"
                 target="_blank"
                 >photo</a
               >
@@ -86,7 +96,12 @@
             <a class="text-uppercase text-light" href="video.html">Video</a>
           </li>
           <li class="py-3 px-5">
-            <a class="text-uppercase text-light" href="photo.html">photo</a>
+            <a
+              class="text-uppercase text-light"
+              href="https://dareiovisuals.myportfolio.com/"
+              target="_blank"
+              >photo</a
+            >
           </li>
           <li class="py-3 px-5">
             <a class="text-uppercase text-light" href="design.html">design</a>
@@ -108,8 +123,43 @@
           "Storytelling through motion and emotion"
         </h2>
 
-        <!-- Category Filters -->
-        <div class="text-center mb-4">
+        <!-- Modern Mobile-Friendly Filter System -->
+        <div class="mobile-filter-container">
+          <div class="filter-header">
+            <h3 class="filter-title">Browse My Videos</h3>
+            <p class="filter-subtitle">Tap to filter by category</p>
+          </div>
+
+          <div class="filter-pills">
+            <div class="filter-pill active" data-filter="all">
+              All Videos
+              <span class="count">4</span>
+            </div>
+            <div class="filter-pill" data-filter="commercial">
+              Commercial
+              <span class="count">1</span>
+            </div>
+            <div class="filter-pill" data-filter="documentary">
+              Documentary
+              <span class="count">3</span>
+            </div>
+            <div class="filter-pill" data-filter="interview">
+              Interview
+              <span class="count">1</span>
+            </div>
+            <div class="filter-pill" data-filter="personal">
+              Personal
+              <span class="count">2</span>
+            </div>
+          </div>
+
+          <div class="filter-results" id="filterResults">
+            Showing all 4 videos
+          </div>
+        </div>
+
+        <!-- Desktop Filter (Hidden on Mobile) -->
+        <div class="text-center mb-4 video-filters d-none d-md-block">
           <div class="btn-group" role="group" aria-label="Video categories">
             <button
               type="button"
@@ -146,6 +196,264 @@
             >
               Personal
             </button>
+          </div>
+        </div>
+
+        <!-- Instagram Reels as Commercial Video Items -->
+        <div
+          class="row g-4 justify-content-center video-item"
+          data-category="commercial"
+        >
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <a
+              href="https://www.instagram.com/p/DI4cNtjR83e/"
+              target="_blank"
+              class="reel-thumbnail-link"
+              style="
+                position: relative;
+                display: block;
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+                transition: transform 0.2s;
+                width: 320px;
+                height: 600px;
+              "
+            >
+              <img
+                src="images/reel1.jpg"
+                alt="Instagram Reel 1 thumbnail"
+                style="
+                  width: 320px;
+                  height: 600px;
+                  object-fit: cover;
+                  background: #222;
+                  display: block;
+                "
+              />
+              <span
+                class="play-button-overlay"
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 70px;
+                  height: 70px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  pointer-events: none;
+                "
+              >
+                <svg
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon points="20,15 42,27 20,39" fill="#fff" />
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <a
+              href="https://www.instagram.com/reel/DKAg1nGOxtR/"
+              target="_blank"
+              class="reel-thumbnail-link"
+              style="
+                position: relative;
+                display: block;
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+                transition: transform 0.2s;
+                width: 320px;
+                height: 600px;
+              "
+            >
+              <img
+                src="images/reel2.jpeg"
+                alt="Instagram Reel 2 thumbnail"
+                style="
+                  width: 320px;
+                  height: 600px;
+                  object-fit: cover;
+                  background: #222;
+                  display: block;
+                "
+              />
+              <span
+                class="play-button-overlay"
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 70px;
+                  height: 70px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  pointer-events: none;
+                "
+              >
+                <svg
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon points="20,15 42,27 20,39" fill="#fff" />
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <a
+              href="https://www.instagram.com/reel/DLcqKmIpbdC/"
+              target="_blank"
+              class="reel-thumbnail-link"
+              style="
+                position: relative;
+                display: block;
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+                transition: transform 0.2s;
+                width: 320px;
+                height: 600px;
+              "
+            >
+              <img
+                src="images/reel3.jpeg"
+                alt="Instagram Reel 3 thumbnail"
+                style="
+                  width: 320px;
+                  height: 600px;
+                  object-fit: cover;
+                  background: #222;
+                  display: block;
+                "
+              />
+              <span
+                class="play-button-overlay"
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 70px;
+                  height: 70px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  pointer-events: none;
+                "
+              >
+                <svg
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon points="20,15 42,27 20,39" fill="#fff" />
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <a
+              href="https://www.instagram.com/reel/DKAe1-RuksV/"
+              target="_blank"
+              class="reel-thumbnail-link"
+              style="
+                position: relative;
+                display: block;
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+                transition: transform 0.2s;
+                width: 320px;
+                height: 600px;
+              "
+            >
+              <img
+                src="images/reel4.jpeg"
+                alt="Instagram Reel 4 thumbnail"
+                style="
+                  width: 320px;
+                  height: 600px;
+                  object-fit: cover;
+                  background: #222;
+                  display: block;
+                "
+              />
+              <span
+                class="play-button-overlay"
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 70px;
+                  height: 70px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  pointer-events: none;
+                "
+              >
+                <svg
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon points="20,15 42,27 20,39" fill="#fff" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Personal Project YouTube Video -->
+        <div
+          class="row align-items-center mb-5 mx-xl-5 video-item"
+          data-category="personal"
+        >
+          <div class="col-12 col-md-6">
+            <div class="video-container rounded overflow-hidden">
+              <iframe
+                class="w-100 h-100"
+                src="https://www.youtube.com/embed/_9Z_F3_Yopo"
+                title="Personal Project"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="ps-md-4">
+              <span class="video-category mb-3 d-inline-block">Personal</span>
+              <h4 class="text-uppercase mb-3">
+                Personal Project: YouTube Video
+              </h4>
+              <p class="pb-3">
+                This is a personal project video, showcasing creative work and
+                storytelling. Check it out on YouTube!
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=_9Z_F3_Yopo&list=LL&index=9"
+                class="btn btn-outline-light rounded-pill"
+                target="_blank"
+                >Watch Project</a
+              >
+            </div>
           </div>
         </div>
 
@@ -209,11 +517,12 @@
               <p class="pb-3">
                 We went to a car event and interviewed a car guy who runs his
                 own business. He shared his love for cars and talked about what
-                it’s like to work in the industry.
+                it's like to work in the industry.
               </p>
               <a
                 href="https://www.youtube.com/embed/kXZYC0YcTa4"
                 class="btn btn-outline-light rounded-pill"
+                target="_blank"
                 >Watch Project</a
               >
             </div>
@@ -230,7 +539,7 @@
               <iframe
                 class="w-100 h-100"
                 src="https://player.vimeo.com/video/996092690"
-                title="YouTube video"
+                title="Vimeo video"
                 allowfullscreen
               ></iframe>
             </div>
@@ -245,7 +554,7 @@
               <p class="pb-3">
                 We shot a video exploring the themes of peace and chaos,
                 capturing the contrast between calm moments and intense energy.
-                It’s a creative take on finding balance in opposites.
+                It's a creative take on finding balance in opposites.
               </p>
               <a
                 href="https://player.vimeo.com/video/996092690"
@@ -287,6 +596,7 @@
               <a
                 href="https://www.youtube.com/embed/8V20cBQnOOc"
                 class="btn btn-outline-light rounded-pill"
+                target="_blank"
                 >Watch Project</a
               >
             </div>
@@ -333,11 +643,94 @@
           : "fa-solid fa-bars";
       };
 
-      // Video filter functionality
+      // Modern Video Filter functionality
       document.addEventListener("DOMContentLoaded", function () {
-        const filterButtons = document.querySelectorAll("[data-filter]");
+        const filterPills = document.querySelectorAll(".filter-pill");
+        const filterButtons = document.querySelectorAll(
+          ".btn-group [data-filter]"
+        );
         const videoItems = document.querySelectorAll(".video-item");
+        const filterResults = document.getElementById("filterResults");
 
+        // Count items per category
+        function countItemsByCategory() {
+          const counts = {
+            all: videoItems.length,
+            commercial: 0,
+            documentary: 0,
+            interview: 0,
+            personal: 0,
+          };
+
+          videoItems.forEach((item) => {
+            const categories = item.getAttribute("data-category").split(" ");
+            categories.forEach((category) => {
+              if (counts.hasOwnProperty(category)) {
+                counts[category]++;
+              }
+            });
+          });
+
+          return counts;
+        }
+
+        // Update filter counts
+        function updateFilterCounts() {
+          const counts = countItemsByCategory();
+          filterPills.forEach((pill) => {
+            const filterType = pill.getAttribute("data-filter");
+            const countElement = pill.querySelector(".count");
+            if (countElement && counts[filterType] !== undefined) {
+              countElement.textContent = counts[filterType];
+            }
+          });
+        }
+
+        // Filter function
+        function filterItems(filterValue) {
+          let visibleCount = 0;
+
+          videoItems.forEach((item) => {
+            const categories = item.getAttribute("data-category").split(" ");
+
+            if (filterValue === "all" || categories.includes(filterValue)) {
+              item.classList.remove("d-none", "filtered-out");
+              item.classList.add("filtered-in");
+              visibleCount++;
+            } else {
+              item.classList.add("d-none", "filtered-out");
+              item.classList.remove("filtered-in");
+            }
+          });
+
+          // Update results counter
+          if (filterResults) {
+            if (filterValue === "all") {
+              filterResults.textContent = `Showing all ${visibleCount} videos`;
+            } else {
+              filterResults.textContent = `Showing ${visibleCount} ${filterValue} video${
+                visibleCount !== 1 ? "s" : ""
+              }`;
+            }
+          }
+        }
+
+        // Mobile filter pills
+        filterPills.forEach((pill) => {
+          pill.addEventListener("click", function () {
+            const filterValue = this.getAttribute("data-filter");
+
+            // Remove active class from all pills
+            filterPills.forEach((p) => p.classList.remove("active"));
+            // Add active class to clicked pill
+            this.classList.add("active");
+
+            // Filter items
+            filterItems(filterValue);
+          });
+        });
+
+        // Desktop filter buttons
         filterButtons.forEach((button) => {
           button.addEventListener("click", function () {
             // Remove active class from all buttons
@@ -347,31 +740,21 @@
 
             const filterValue = this.getAttribute("data-filter");
 
-            videoItems.forEach((item) => {
-              const categories = item.getAttribute("data-category").split(" ");
-              if (filterValue === "all" || categories.includes(filterValue)) {
-                item.classList.remove("d-none"); // Use Bootstrap class to hide
-              } else {
-                item.classList.add("d-none");
-              }
-            });
+            // Filter items
+            filterItems(filterValue);
           });
         });
+
+        // Initialize counts
+        updateFilterCounts();
       });
     </script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
   </body>
 </html>

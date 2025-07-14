@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivan Lau</title>
+    <title>Dareio Visuals</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,20 +14,120 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
-
     <link rel="icon" href="images/Logo-v1w.ico" type="icon" />
-
     <script
       src="https://kit.fontawesome.com/a147245d39.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+            rgba(15, 19, 18, 0.7),
+            rgba(15, 19, 18, 0.7)
+          ),
+          url("images/herobanner.jpeg") center/cover no-repeat;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        position: relative;
+      }
+      .hero-content {
+        z-index: 2;
+        text-align: center;
+        padding: 3rem 1rem;
+      }
+      .hero-title {
+        font-size: 3rem;
+        font-family: "Aboreto", serif;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+      }
+      .hero-sub {
+        font-size: 1.5rem;
+        font-family: "Lora", serif;
+        margin-bottom: 2.5rem;
+        color: var(--bs-primary-color);
+      }
+      .hero-btn {
+        font-size: 1.1rem;
+        margin: 0 0.5rem 1rem 0.5rem;
+        padding: 0.75rem 2.5rem;
+        border-radius: 30px;
+      }
+      .hero-social {
+        margin-top: 2rem;
+      }
+      .hero-social a {
+        color: #fff;
+        font-size: 2rem;
+        margin: 0 0.7rem;
+        transition: color 0.2s;
+      }
+      .hero-social a:hover {
+        color: var(--bs-primary-color);
+      }
+      .portfolio-cards .card {
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+      }
+      .portfolio-cards .card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(173, 239, 237, 0.18);
+      }
+      .portfolio-cards img {
+        height: 220px;
+        object-fit: cover;
+      }
+      .about-section {
+        background: rgba(15, 19, 18, 0.92);
+        border-radius: 18px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+        padding: 2.5rem 1.5rem;
+        margin: 3rem 0;
+      }
+      .about-section img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+        border: 4px solid var(--bs-primary-color);
+      }
+      .services-section .card {
+        border-radius: 16px;
+        background: rgba(93, 77, 102, 0.1);
+        border: none;
+        text-align: center;
+        padding: 2rem 1rem;
+        transition: box-shadow 0.2s, transform 0.2s;
+      }
+      .services-section .card:hover {
+        box-shadow: 0 6px 24px rgba(218, 189, 234, 0.13);
+        transform: translateY(-6px) scale(1.04);
+      }
+      .services-section i {
+        font-size: 2.5rem;
+        color: var(--bs-primary-color);
+        margin-bottom: 1rem;
+      }
+      h1 {
+        font-family: "Newsreader", serif !important;
+        color: #ffffff !important;
+      }
+    </style>
   </head>
   <body>
-    <!-- /////////////////////////////     * Header *     ////////////////////////////// -->
-
+    <!-- Header -->
     <header>
       <div
         class="color-bg-black d-flex flex-row justify-content-center align-items-center justify-content-between justify-content-md-start"
@@ -36,12 +136,11 @@
           <img src="images/Logo-v2.png" class="logo" alt="logo" />
         </a>
         <a href="home.html">
-          <h1 class="text-uppercase mb-0 text-center">Ivan Lau</h1>
+          <h1 class="text-uppercase mb-0 text-center">DAREIO VISUALS</h1>
         </a>
         <div class="toggle_btn text-center d-md-none">
           <i class="fa-solid fa-bars pe-auto"></i>
         </div>
-
         <nav class="d-none d-md-block flex-grow-1">
           <ul
             class="text-center d-md-block d-md-flex flex-md-row justify-content-md-evenly justify-content-xl-end me-xl-3"
@@ -55,7 +154,7 @@
             <li class="py-3 px-2 px-xl-4">
               <a
                 class="btn-nav text-uppercase"
-                href="https://dareiolau.myportfolio.com/"
+                href="https://dareiovisuals.myportfolio.com/"
                 target="_blank"
                 >photo</a
               >
@@ -83,7 +182,12 @@
             <a class="text-uppercase text-light" href="video.html">Video</a>
           </li>
           <li class="py-3 px-5">
-            <a class="text-uppercase text-light" href="home.html">photo</a>
+            <a
+              class="text-uppercase text-light"
+              href="https://dareiovisuals.myportfolio.com/"
+              target="_blank"
+              >photo</a
+            >
           </li>
           <li class="py-3 px-5">
             <a class="text-uppercase text-light" href="design.html">design</a>
@@ -97,135 +201,259 @@
         </ul>
       </nav>
     </header>
-
     <script>
       const toggleBtn = document.querySelector(".toggle_btn");
       const toggleBtnIcon = document.querySelector(".toggle_btn i");
       const dropDownMenu = document.querySelector(".dropdown-menu-mine");
-
       toggleBtn.onclick = function () {
         dropDownMenu.classList.toggle("open");
         const isOpen = dropDownMenu.classList.contains("open");
-
         toggleBtnIcon.classList = isOpen
           ? "fa-solid fa-xmark"
           : "fa-solid fa-bars";
       };
     </script>
-
-    <!-- /////////////////////////////     * Banner *     ////////////////////////////// -->
-
-    <section>
-      <div
-        class="banner d-flex flex-column justify-content-end align-items-end pb-3 pe-4 pb-xl-5 pe-xl-5 container-fluid"
-      >
-        <h2 class="text-uppercase lh-1">creative agency</h2>
-        <h3 class="text-uppercase mb-2 text-light lh-1">Dareio Visuals</h3>
-        <a
-          href="about.html"
-          class="text-uppercase btn btn-outline-light rounded-pill bg-secondary bg-opacity-50 px-3"
-        >
-          About me
-        </a>
-      </div>
-    </section>
-
-    <!-- /////////////////////////////     * showcase *     ////////////////////////////// -->
-
-    <section class="container-fluid">
-      <div
-        class="showcase gap-3 my-4 mx-2 gap-md-4 mx-md-4 my-md-5 mx-xl-5 my-xl-5"
-      >
-        <h5 class="portrait-card p-4 text-light rounded">Portrait</h5>
-        <h5 class="car-card p-4 text-light rounded">Car</h5>
-        <h5 class="brand-card p-4 text-light rounded">Brand work</h5>
-      </div>
-      <div class="border m-3 mx-xl-5"></div>
-    </section>
-    <!-- /////////////////////////////     * about-me *     ////////////////////////////// -->
-
-    <section class="container-fluid">
-      <div class="m-2">
-        <h3 class="text-light text-center my-4">A LITTLE ABOUT ME</h3>
-        <h2 class="text-center text-secondary-emphasis">
-          “Forever creating never stop evolving”
-        </h2>
+    <!-- HERO SECTION (Redesigned for Dareio Visuals) -->
+    <section class="hero-bg">
+      <div class="hero-content">
+        <h1 class="hero-title animate__animated animate__fadeInDown">
+          DAREIO VISUALS
+        </h1>
+        <p class="hero-sub animate__animated animate__fadeInUp m-4">
+          Building Brands People Feel, Not Just See.
+        </p>
         <div
-          class="position-relative d-xl-flex flex-xl-row gap-xl-4 mx-xl-5 mb-xl-5"
+          class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-4 animate__animated animate__fadeInUp animate__delay-1s"
         >
-          <img
-            class="img-myself w-100 mt-3 rounded"
-            src="images/myself.jpg"
-            alt="myself"
-          />
+          <a href="video.html" class="btn btn-primary hero-btn"
+            >Watch Showreel</a
+          >
+          <a
+            href="https://dareiovisuals.myportfolio.com/"
+            target="_blank"
+            class="btn btn-outline-secondary hero-btn"
+            >View Photo Portfolio</a
+          >
+        </div>
+        <div
+          class="hero-social animate__animated animate__fadeInUp animate__delay-2s"
+        >
+          <a
+            href="https://instagram.com/dareiovisuals"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://youtube.com/@dareiovisuals"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="mailto:dareiovisuals@gmail.com" aria-label="Email"
+            ><i class="fa fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </section>
 
-          <h5 class="hi-text position-absolute top-0 start-0 text-light">
-            Hi, I am Ivan!
-          </h5>
-          <div class="w-100 d-xl-flex align-items-xl-center">
-            <div>
-              <h4 class="text-uppercase fw-lighter my-4 text-center">
-                Who am I?
-              </h4>
-              <p class="mb-3 fw-lighter">
-                I am an international student from Hong Kong currently studying
-                in Canada. I am a photographer, videographer, and designer.
-                Whenever the world needs some creativity, I would love to be
-                there.
-              </p>
-              <p>
-                My life is all about creating and exploring! Check out my work
-                and let’s work together. I am here to bring your vision to life!
-              </p>
-              <div class="text-center my-4 mb-md-5">
-                <a
-                  class="text-uppercase btn btn-outline-light rounded-pill bg-secondary px-4"
-                  href="contact.html"
-                >
-                  Contact
-                </a>
+    <!-- FEATURED PORTFOLIO HIGHLIGHTS -->
+    <section class="container my-5">
+      <h2
+        class="text-center mb-5"
+        style="
+          font-family: 'Aboreto', serif;
+          font-size: 2.5rem;
+          letter-spacing: 1px;
+        "
+      >
+        Featured Work
+      </h2>
+      <div class="row portfolio-cards justify-content-center g-4">
+        <div class="col-12 col-md-4">
+          <a
+            href="video.html"
+            class="card-link"
+            aria-label="Go to Video Showreel"
+            target="_blank"
+            rel="noopener"
+          >
+            <div
+              class="card h-100 shadow-lg animate__animated animate__fadeInUp"
+            >
+              <iframe
+                class="w-100 h-100"
+                src="https://www.youtube.com/embed/_9Z_F3_Yopo"
+                title="Personal Project"
+                allowfullscreen
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Video Showreel</h5>
+                <p class="card-text">
+                  A selection of commercial and personal video projects,
+                  including Instagram Reels and YouTube content.
+                </p>
+                <span class="btn btn-primary">Watch Now</span>
               </div>
             </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a
+            href="https://dareiovisuals.myportfolio.com/"
+            target="_blank"
+            rel="noopener"
+            class="card-link"
+            aria-label="Go to Photo Portfolio"
+          >
+            <div
+              class="card h-100 shadow-lg animate__animated animate__fadeInUp animate__delay-1s"
+            >
+              <img
+                src="images/about-imgone.jpg"
+                class="card-img-top"
+                alt="Photo Portfolio"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Photo Portfolio</h5>
+                <p class="card-text">
+                  Explore our photography work, from landscapes to portraits and
+                  commercial shoots.
+                </p>
+                <span class="btn btn-outline-secondary">View Gallery</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a
+            href="design.html"
+            class="card-link"
+            aria-label="Go to Design Portfolio"
+            target="_blank"
+            rel="noopener"
+          >
+            <div
+              class="card h-100 shadow-lg animate__animated animate__fadeInUp animate__delay-2s"
+            >
+              <img
+                src="images/design-poster.jpg"
+                class="card-img-top"
+                alt="Design Portfolio"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Design Portfolio</h5>
+                <p class="card-text">
+                  A showcase of branding, posters, and digital design projects
+                  for various clients and personal work.
+                </p>
+                <span class="btn btn-outline-secondary">See Designs</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT/INTRO SECTION (Studio-Focused) -->
+    <section
+      class="container about-section my-5 animate__animated animate__fadeInUp animate__delay-3s"
+    >
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+          <img
+            src="images/myself.jpg"
+            alt="Dareio Visuals Studio"
+            class="img-fluid"
+            style="
+              border-radius: 50%;
+              border: 4px solid var(--bs-primary-color);
+              width: 180px;
+              height: 180px;
+              object-fit: cover;
+            "
+          />
+        </div>
+        <div class="col-12 col-md-8">
+          <h3
+            class="mb-3"
+            style="font-family: 'Aboreto', serif; font-size: 2rem"
+          >
+            Welcome to Dareio Visuals
+          </h3>
+          <p style="font-size: 1.2rem; color: var(--bs-secondary-color)">
+            Dareio Visuals is a Canada-based creative studio specializing in
+            cinematography, photography, and design. We help brands and
+            individuals tell their stories through stunning visuals and creative
+            design. Let's create something amazing together!
+          </p>
+          <a href="about.html" class="btn btn-primary mt-3">More About Us</a>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="container services-section my-5">
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-3">
+          <div class="card h-100">
+            <i class="fa-solid fa-camera-retro"></i>
+            <h5 class="mt-3 mb-2">Photography</h5>
+            <p class="mb-0">Portraits, events, commercial, and more.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card h-100">
+            <i class="fa-solid fa-video"></i>
+            <h5 class="mt-3 mb-2">Video Production</h5>
+            <p class="mb-0">
+              Storytelling, promo, interviews, and creative edits.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card h-100">
+            <i class="fa-solid fa-palette"></i>
+            <h5 class="mt-3 mb-2">Design</h5>
+            <p class="mb-0">Branding, graphics, web, and print design.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card h-100">
+            <i class="fa-solid fa-bullhorn"></i>
+            <h5 class="mt-3 mb-2">Branding</h5>
+            <p class="mb-0">Visual identity and creative direction.</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- /////////////////////////////     * footer *     ////////////////////////////// -->
-
+    <!-- Footer -->
     <footer>
       <div class="bg-body-secondary pt-4">
         <div class="social-icon d-flex justify-content-evenly mx-5">
-          <a href="https://www.instagram.com/lil.v4n/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://www.youtube.com/@DareioVisuels" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/lauchunngai/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/lau00082" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
+          <a href="https://www.instagram.com/lil.v4n/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/@DareioVisuels" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/lauchunngai/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/lau00082" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
-
         <p class="text-center text-white py-3">
           &copy; 2024 Dareio Visuals. All Rights Reserved.
         </p>
       </div>
     </footer>
-
-    <!-- /////////////////////////////     ********     ////////////////////////////// -->
-
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
   </body>

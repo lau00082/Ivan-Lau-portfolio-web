@@ -1,9 +1,11 @@
 {
   "folders": [
-	{
-		"name": "mtm6201-final",
-		"path": "."
-	}
-],
-  "settings": {}
+    {
+      "name": "mtm6201-final",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.port": 5501
+  }
 }

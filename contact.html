@@ -27,6 +27,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="icon" href="images/Logo-v1w.ico" type="icon" />
 
@@ -46,7 +50,7 @@
           <img src="images/Logo-v2.png" class="logo" alt="logo" />
         </a>
         <a href="home.html">
-          <h1 class="text-uppercase mb-0 text-center">Ivan Lau</h1>
+          <h1 class="text-uppercase mb-0 text-center">Dareio Visuals</h1>
         </a>
         <div class="toggle_btn text-center d-md-none">
           <i class="fa-solid fa-bars pe-auto"></i>
@@ -65,7 +69,7 @@
             <li class="py-3 px-2 px-xl-4">
               <a
                 class="btn-nav text-uppercase"
-                href="https://dareiolau.myportfolio.com/"
+                href="https://dareiovisuals.myportfolio.com/"
                 target="_blank"
                 >photo</a
               >
@@ -95,7 +99,7 @@
           <li class="py-3 px-5">
             <a
               class="btn-nav text-uppercase"
-              href="https://dareiolau.myportfolio.com/"
+              href="https://dareiovisuals.myportfolio.com/"
               target="_blank"
               >photo</a
             >
@@ -156,13 +160,14 @@
         <div class="mt-3 container-fluid">
           <div class="row justify-content-center">
             <div class="contact-form col-10">
-              <form>
+              <form action="https://formspree.io/f/xdoqzqzq" method="POST">
                 <div class="form-group mb-2">
                   <label class="mb-1" for="name">Name *</label>
                   <input
                     type="text"
                     class="form-control"
                     id="name"
+                    name="name"
                     placeholder="Your name"
                     required
                   />
@@ -173,6 +178,7 @@
                     type="email"
                     class="form-control"
                     id="email"
+                    name="email"
                     placeholder="Your email"
                     required
                   />
@@ -182,6 +188,7 @@
                   <textarea
                     class="form-control"
                     id="message"
+                    name="message"
                     rows="4"
                     placeholder="Message"
                     required
@@ -193,16 +200,29 @@
                     type="text"
                     class="form-control"
                     id="question"
+                    name="question"
                     placeholder="Anything you want to ask"
                     required
                   />
                 </div>
                 <div class="my-3">
-                  <a
+                  <button
+                    type="submit"
                     class="text-uppercase btn btn-outline-light rounded-pill bg-secondary px-4"
                   >
                     SEND
-                  </a>
+                  </button>
+                </div>
+                <div
+                  id="form-success"
+                  style="
+                    display: none;
+                    color: var(--bs-primary-color);
+                    text-align: center;
+                    margin-top: 1rem;
+                  "
+                >
+                  Thank you! Your message has been sent.
                 </div>
               </form>
             </div>
@@ -210,6 +230,14 @@
         </div>
       </div>
     </section>
+    <script>
+      // Optional: Show a success message after submission (Formspree auto-redirects, but this is for AJAX or no-redirect setups)
+      document.querySelector("form").addEventListener("submit", function (e) {
+        setTimeout(function () {
+          document.getElementById("form-success").style.display = "block";
+        }, 1000);
+      });
+    </script>
 
     <!-- /////////////////////////////     * Connect *     ////////////////////////////// -->
     <section class="container-fluid">
@@ -221,6 +249,12 @@
           Feel free to ask us for any inquiries! I usually respond within three
           business day.
         </h2>
+        <a
+          href="mailto:dareiovisuals@gmail.com"
+          class="btn btn-primary my-3"
+          style="font-size: 1.2rem"
+          >Email dareiovisuals@gmail.com</a
+        >
       </div>
     </section>
 
