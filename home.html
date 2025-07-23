@@ -27,10 +27,10 @@
     <style>
       .hero-bg {
         background: linear-gradient(
-            rgba(15, 19, 18, 0.7),
-            rgba(15, 19, 18, 0.7)
+            rgba(15, 19, 18, 0.5),
+            rgba(15, 19, 18, 0.5)
           ),
-          url("images/herobanner.jpeg") center/cover no-repeat;
+          url("images/herobannerv2.jpeg") center/cover no-repeat;
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -88,21 +88,7 @@
         height: 220px;
         object-fit: cover;
       }
-      .about-section {
-        background: rgba(15, 19, 18, 0.92);
-        border-radius: 18px;
-        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
-        padding: 2.5rem 1.5rem;
-        margin: 3rem 0;
-      }
-      .about-section img {
-        width: 160px;
-        height: 160px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 1.5rem;
-        border: 4px solid var(--bs-primary-color);
-      }
+
       .services-section .card {
         border-radius: 16px;
         background: rgba(93, 77, 102, 0.1);
@@ -162,11 +148,17 @@
             <li class="py-3 px-2 px-xl-4">
               <a class="btn-nav text-uppercase" href="design.html">design</a>
             </li>
-            <li class="py-3 px-2 px-xl-4">
+            <!-- <li class="py-3 px-2 px-xl-4">
               <a class="btn-nav text-uppercase" href="about.html">about</a>
-            </li>
+            </li> -->
             <li class="py-3 px-2 px-xl-4">
-              <a class="btn-nav text-uppercase" href="contact.html">Contact</a>
+              <a
+                class="btn-nav text-uppercase"
+                href="https://dareiovisuals.myportfolio.com/contact"
+                target="_blank"
+                rel="noopener"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
@@ -192,11 +184,17 @@
           <li class="py-3 px-5">
             <a class="text-uppercase text-light" href="design.html">design</a>
           </li>
-          <li class="py-3 px-5">
+          <!-- <li class="py-3 px-5">
             <a class="text-uppercase text-light" href="about.html">about</a>
-          </li>
+          </li> -->
           <li class="py-3 px-5">
-            <a class="text-uppercase text-light" href="contact.html">Contact</a>
+            <a
+              class="text-uppercase text-light"
+              href="https://dareiovisuals.myportfolio.com/contact"
+              target="_blank"
+              rel="noopener"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -225,14 +223,26 @@
         <div
           class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-4 animate__animated animate__fadeInUp animate__delay-1s"
         >
-          <a href="video.html" class="btn btn-primary hero-btn"
-            >Watch Showreel</a
+          <a
+            href="video.html"
+            class="btn hero-btn"
+            style="
+              background-color: var(--bs-primary-color);
+              color: #222;
+              border: none;
+            "
+            >VIDEO WORK</a
           >
           <a
             href="https://dareiovisuals.myportfolio.com/"
             target="_blank"
-            class="btn btn-outline-secondary hero-btn"
-            >View Photo Portfolio</a
+            class="btn hero-btn"
+            style="
+              background: none;
+              color: var(--bs-primary-color);
+              border: 1.5px solid var(--bs-primary-color);
+            "
+            >PHOTO PORTFOLIO</a
           >
         </div>
         <div
@@ -245,7 +255,7 @@
             ><i class="fab fa-instagram"></i
           ></a>
           <a
-            href="https://youtube.com/@dareiovisuals"
+            href="https://www.youtube.com/@Dareio.visuals"
             target="_blank"
             aria-label="YouTube"
             ><i class="fab fa-youtube"></i
@@ -258,7 +268,7 @@
     </section>
 
     <!-- FEATURED PORTFOLIO HIGHLIGHTS -->
-    <section class="container my-5">
+    <section class="my-5 container">
       <h2
         class="text-center mb-5"
         style="
@@ -269,7 +279,7 @@
       >
         Featured Work
       </h2>
-      <div class="row portfolio-cards justify-content-center g-4">
+      <div class="portfolio-cards">
         <div class="col-12 col-md-4">
           <a
             href="video.html"
@@ -337,7 +347,7 @@
               class="card h-100 shadow-lg animate__animated animate__fadeInUp animate__delay-2s"
             >
               <img
-                src="images/design-poster.jpg"
+                src="images/brand-swing.jpeg"
                 class="card-img-top"
                 alt="Design Portfolio"
               />
@@ -357,38 +367,36 @@
 
     <!-- ABOUT/INTRO SECTION (Studio-Focused) -->
     <section
-      class="container about-section my-5 animate__animated animate__fadeInUp animate__delay-3s"
+      class="container my-5 animate__animated animate__fadeInUp animate__delay-3s d-flex flex-column align-items-center justify-content-center text-center"
     >
-      <div class="row align-items-center justify-content-center">
-        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
-          <img
-            src="images/myself.jpg"
-            alt="Dareio Visuals Studio"
-            class="img-fluid"
-            style="
-              border-radius: 50%;
-              border: 4px solid var(--bs-primary-color);
-              width: 180px;
-              height: 180px;
-              object-fit: cover;
-            "
-          />
-        </div>
-        <div class="col-12 col-md-8">
-          <h3
-            class="mb-3"
-            style="font-family: 'Aboreto', serif; font-size: 2rem"
-          >
-            Welcome to Dareio Visuals
-          </h3>
-          <p style="font-size: 1.2rem; color: var(--bs-secondary-color)">
-            Dareio Visuals is a Canada-based creative studio specializing in
-            cinematography, photography, and design. We help brands and
-            individuals tell their stories through stunning visuals and creative
-            design. Let's create something amazing together!
-          </p>
-          <a href="about.html" class="btn btn-primary mt-3">More About Us</a>
-        </div>
+      <div style="max-width: 600px; width: 100%">
+        <h3
+          class="mb-3"
+          style="
+            font-family: 'Lora', serif;
+            font-size: 2rem;
+            color: var(--bs-primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          "
+        >
+          Welcome to Dareio Visuals
+        </h3>
+        <p
+          style="
+            font-size: 1.2rem;
+            color: var(--bs-secondary-color);
+            max-width: 600px;
+          "
+        >
+          Dareio Visuals is a Canada-based creative studio specializing in
+          cinematography, photography, and design. We help brands and
+          individuals tell their stories through stunning visuals and creative
+          design. Let's create something amazing together!
+        </p>
+        <a href="mailto:dareiovisuals@gmail.com" class="btn btn-primary mt-3"
+          >Email Us</a
+        >
       </div>
     </section>
     <!-- Services Section -->
